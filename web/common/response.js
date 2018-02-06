@@ -1,8 +1,10 @@
+import constant from '../../config/constant.json';
+
 const ERROR_RESPONCE = {
   unauthorized: e => {
     return {
       code: 4010,
-      message: 'Unauthorized access',
+      message: constant.RESPONCE.Unauthorized,
       success: false,
       data: e
     };
@@ -11,7 +13,7 @@ const ERROR_RESPONCE = {
   validation: e => {
     return {
       code: 4011,
-      message: 'Validation error occur.',
+      message: constant.RESPONCE.validation,
       success: false,
       data: e
     };
@@ -20,7 +22,7 @@ const ERROR_RESPONCE = {
   contentNotFound: e => {
     return {
       code: 4012,
-      message: 'Mongo content error occur.',
+      message: constant.RESPONCE.DbContentNotFound,
       success: false,
       data: e
     };
@@ -28,7 +30,15 @@ const ERROR_RESPONCE = {
   serverError: e => {
     return {
       code: 5000,
-      message: 'Internal Serve Error',
+      message: constant.RESPONCE.InternalServeError,
+      success: false,
+      data: e
+    };
+  },
+  notFound: e => {
+    return {
+      code: 4040,
+      message: constant.RESPONCE.notFound,
       success: false,
       data: e
     };
@@ -39,7 +49,7 @@ const SUCCESS_RESPONCE = {
   success: s => {
     return {
       code: 2001,
-      message: 'Successful',
+      message: constant.RESPONCE.Successful,
       success: true,
       data: s
     };
@@ -47,7 +57,7 @@ const SUCCESS_RESPONCE = {
   exist: s => {
     return {
       code: 4220,
-      message: 'Data Exist',
+      message: constant.RESPONCE.DataExist,
       success: false,
       data: s
     };
