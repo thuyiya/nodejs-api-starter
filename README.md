@@ -134,7 +134,7 @@ $ npm i --save-dev babel-cli babel-preset-es2015 babel-preset-stage-2
   $ npm i --save-dev eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
 ```
 
-##### 3. Add Editore Configaration
+##### 3. Add Editor Configaration
 
  - Create `.editorconfig` in root or install editorconfig plugin to VsCode
  ```
@@ -183,6 +183,17 @@ launch.json
 }
 ```
 
+### Kill server
+
+If you got like `listen EADDRINUSE :::3000` after you try to re run the serve, you have to kill the pid
+
+```sh
+$ lsof -i :<PORT>
+
+$ kill -9 <PID>
+```
+
+
 #### Understanding the File Structure
 ```
 │
@@ -228,7 +239,7 @@ launch.json
 License
 ----
 
-MIT
+[MIT](LICENSE)
 
 
 **Free Software, Hell Yeah!**

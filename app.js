@@ -1,8 +1,6 @@
-import DotEnv from 'dotenv';
-import http from 'http';
 
+import http from 'http';
 import { app } from './web';
-DotEnv.config();
 
 http.createServer(app).listen(process.env.PORT, err => {
   if (err) {
