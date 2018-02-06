@@ -7,7 +7,7 @@
 
 # Nodejs Stater Kit
 
-[![N|Solid](https://cldup.com/QHVAB_xBFk.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://cldup.com/QHVAB_xBFk.png)](https://www.linkedin.com/in/thuyiya/)
 
 Nodejs Stater Kit is a starter kit for beginers.
 
@@ -34,6 +34,7 @@ Softwares and Recommended Node.js Libraries:
 * [VsCode](https://code.visualstudio.com/) - awesome web-based text editor!
 * [Robomongo](https://robomongo.org/) - for conect with mongoDb
 * [Nodemon] - Automatically restart Node.js server on code changes
+* [Readme Creator](https://dillinger.io/) - For create readme file
 
 ### Installation
 
@@ -75,7 +76,6 @@ Stater kit is currently extended with the following plugins. Instructions on how
 | morgan | HTTP request logger middleware for node.js. |
 | body-parser | Node.js body parsing middleware. |
 | cookie-parser | Parse Cookie header and populate req.cookies with an object keyed by the cookie names. |
-
 
 ### Development
 
