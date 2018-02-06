@@ -5,6 +5,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+.package-lock.json
+package-lock.json
+
+#Api directories
+public/
+
 # Runtime data
 pids
 *.pid

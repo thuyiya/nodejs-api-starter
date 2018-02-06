@@ -61,20 +61,20 @@ Stater kit is currently extended with the following plugins. Instructions on how
 
 | Plugin | README |
 | ------ | ------ |
-| Express | [Node.js web framework] [PlDb] |
-| Github | [github	GitHub API library] [PlGh] |
-| body-parser | [Express 4 middleware] [PlGd] |
-| express-session | [Express 4 middleware] [PlOd] |
-| mongoose | [MongoDB ODM.] [PlMe] |
-| dotenv | [Loads environment variables from .env file.] [PlGa] |
-| mocha | [Test framework.] [PlGa] |
-| chai | [BDD/TDD assertion library.] [PlGa] |
-| async | [Utility library that provides asynchronous control flow.] [PlGa] |
-| paypal-rest-sdk | [PayPal APIs library.] [PlGa] |
-| nodemailer | [Node.js library for sending emails.] [PlGa] |
-| morgan | [HTTP request logger middleware for node.js.] [PlGa] |
-| body-parser | [Node.js body parsing middleware.] [PlGa] |
-| cookie-parser | [Parse Cookie header and populate req.cookies with an object keyed by the cookie names.] [PlGa] |
+| Express | Node.js web framework |
+| Github | github	GitHub API library |
+| body-parser | Express 4 middleware |
+| express-session | Express 4 middleware |
+| mongoose | MongoDB ODM. |
+| dotenv | Loads environment variables from .env file. |
+| mocha | Test framework. |
+| chai | BDD/TDD assertion library |
+| async | Utility library that provides asynchronous control flow. |
+| paypal-rest-sdk | PayPal APIs library. |
+| nodemailer | Node.js library for sending emails. |
+| morgan | HTTP request logger middleware for node.js. |
+| body-parser | Node.js body parsing middleware. |
+| cookie-parser | Parse Cookie header and populate req.cookies with an object keyed by the cookie names. |
 
 
 ### Development
@@ -150,6 +150,38 @@ trim_trailing_whitespace = true
 insert_final_newline = true
  ```
 
+
+##### 4. Genarate api docs for public
+in terminal
+  ```sh
+  $ npm install apidoc -g
+  $ apidoc -i web/routes/api/ -o public/apidoc
+  ```
+
+##### 5. Debug configaration with `launch.json` VsCode
+
+launch.json
+```
+  ...
+    "configurations": [
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "Launch Program",
+          "program": "${workspaceRoot}/app.js",
+          "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/babel-node",
+          "cwd": "${workspaceRoot}",
+          "sourceMaps": true
+      },
+      {
+          "type": "node",
+          "request": "attach",
+          "name": "Attach to Process",
+          "port": 5858
+      }
+    ]
+}
+```
 
 #### Understanding the File Structure
 ```

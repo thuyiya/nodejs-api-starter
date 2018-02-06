@@ -18,6 +18,7 @@ const LOGGER = 'dev'; // ':remote-addr - :remote-user [:date[clf]] ":method :url
 
 application.ROUTE = {
   apiPrefix: '/v1',
+  apiDoc: '/v1/apidoc',
   authlogin: '/auth/login'
 };
 

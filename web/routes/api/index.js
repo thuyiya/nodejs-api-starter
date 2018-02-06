@@ -7,7 +7,6 @@ module.exports = (router) => {
     res.status(200).json({ code: 2000, message: APP.name + ' api version' + APP.version });
   });
 
-  // App Routes @routter
   Auth.setupRoute(router);
 
   router.use(function (req, res, next) {

@@ -9,6 +9,8 @@ const expressRoute = express.Router();
 
 Logger(app);
 
+app.use(application.ROUTE.apiDoc, express.static('public/apidoc'));
+
 app.use(application.ROUTE.apiPrefix, HeaderAccessControl, router(expressRoute));
 
 exports.app = app;
