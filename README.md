@@ -183,6 +183,30 @@ launch.json
 }
 ```
 
+
+### SSL
+
+1. create pem `openssl genrsa -out thuyiya-key.pem 2048`
+2. check `more thuyiya-key.pem` 
+3. certificate request using key `openssl req -new -sha256 -key thuyiya-key.pem -out thuyiya-csr.pem`
+4. create certificate base on request `openssl x509 -req -in thuyiya-csr.pem -signkey thuyiya-key.pem -out thuyiya-cert.pem`
+
+5. add them to application
+```
+var options = {
+    key: fs.readFileSync('thuyiya-key.pem'),
+    cert: fs.readFileSync('thuyiya-cert.pem'),
+    requestCert: false,
+    rejectUnauthorized: false
+}
+```
+6. create serve with default cert
+```
+https.createServer(options, app).listen(3000, () => {
+    console.log('listening to 3000 (HTTPS Server)')
+})
+```
+
 #### Understanding the File Structure
 ```
 │
