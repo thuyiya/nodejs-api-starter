@@ -1,6 +1,7 @@
 const application = {
   TIME_ZONE: 'Asia/Colombo',
-  TIME_FORMAT: 'DD-MM-YYYY hh:mm'
+  TIME_FORMAT: 'DD-MM-YYYY hh:mm',
+  SESSION_KEY: '234324b2iu34i23b4i23bi32b4'
 };
 
 const BODYPARSER = {
@@ -21,6 +22,19 @@ const MONGOOSE_OPTIONS = {
   poolSize: 10, // Maintain up to 10 socket connections
   // If not connected, return errors immediately rather than waiting for reconnect
   bufferMaxEntries: 0
+};
+
+const PASSPORT = {
+  GoogleKeys: {
+    clientID: '',
+    clientSecret: '',
+    callbackURL: 'http://localhost:3000/'
+  },
+  FacebbokKeys: {
+    clientID: '',
+    clientSecret: '',
+    callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
+  }
 };
 
 const LOGGER = 'dev'; // ':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"';
@@ -47,5 +61,6 @@ export {
   REGEX,
   COLORS,
   MONGOOSE_OPTIONS,
+  PASSPORT,
   application
 };
