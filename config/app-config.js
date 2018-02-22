@@ -26,13 +26,13 @@ const MONGOOSE_OPTIONS = {
 
 const PASSPORT = {
   GoogleKeys: {
-    clientID: 'asafas',
-    clientSecret: 'asfsaf',
+    clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
+    clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
     callbackURL: 'http://localhost:3000/'
   },
   FacebbokKeys: {
-    clientID: 'asfa',
-    clientSecret: 'asfas',
+    clientID: '166316493821335',
+    clientSecret: '30b61df3369f869993daae7263d987f2',
     callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
   }
 };
