@@ -1,3 +1,7 @@
+import DotEnv from 'dotenv';
+
+DotEnv.config();
+
 const application = {
   TIME_ZONE: 'Asia/Colombo',
   TIME_FORMAT: 'DD-MM-YYYY hh:mm',
@@ -24,16 +28,114 @@ const MONGOOSE_OPTIONS = {
   bufferMaxEntries: 0
 };
 
-const PASSPORT = {
-  GoogleKeys: {
-    clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
-    clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
-    callbackURL: 'http://localhost:3000/'
+const ENV_CONFIGARATION = {
+  dev: {
+    notification: {
+      auth: '',
+      appId: ''
+    },
+    appSecret: {
+      jwt: ''
+    },
+    email: {
+      host: '',
+      pass: ''
+    },
+    image_server: {
+      cloudinaryApiKey: '252352352523523',
+      cloudinaryApiSecret: '23rf2f23f23f23f2332r-234'
+    },
+    google: {
+      clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
+      clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
+      callbackURL: 'http://localhost:3000/v1/auth/google/callback'
+    },
+    facebook: {
+      clientID: '166316493821335',
+      clientSecret: '30b61df3369f869993daae7263d987f2',
+      callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
+    }
   },
-  FacebbokKeys: {
-    clientID: '166316493821335',
-    clientSecret: '30b61df3369f869993daae7263d987f2',
-    callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
+  prod: {
+    notification: {
+      auth: '',
+      appId: ''
+    },
+    appSecret: {
+      jwt: ''
+    },
+    email: {
+      host: '',
+      pass: ''
+    },
+    image_server: {
+      cloudinaryApiKey: '252352352523523',
+      cloudinaryApiSecret: '23rf2f23f23f23f2332r-234'
+    },
+    google: {
+      clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
+      clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
+      callbackURL: 'http://localhost:3000/v1/auth/google/callback'
+    },
+    facebook: {
+      clientID: '166316493821335',
+      clientSecret: '30b61df3369f869993daae7263d987f2',
+      callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
+    }
+  },
+  staging: {
+    notification: {
+      auth: '',
+      appId: ''
+    },
+    appSecret: {
+      jwt: ''
+    },
+    email: {
+      host: '',
+      pass: ''
+    },
+    image_server: {
+      cloudinaryApiKey: '252352352523523',
+      cloudinaryApiSecret: '23rf2f23f23f23f2332r-234'
+    },
+    google: {
+      clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
+      clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
+      callbackURL: 'http://localhost:3000/v1/auth/google/callback'
+    },
+    facebook: {
+      clientID: '166316493821335',
+      clientSecret: '30b61df3369f869993daae7263d987f2',
+      callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
+    }
+  },
+  uat: {
+    notification: {
+      auth: '',
+      appId: ''
+    },
+    appSecret: {
+      jwt: ''
+    },
+    email: {
+      host: '',
+      pass: ''
+    },
+    image_server: {
+      cloudinaryApiKey: '252352352523523',
+      cloudinaryApiSecret: '23rf2f23f23f23f2332r-234'
+    },
+    google: {
+      clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
+      clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
+      callbackURL: 'http://localhost:3000/'
+    },
+    facebook: {
+      clientID: '166316493821335',
+      clientSecret: '30b61df3369f869993daae7263d987f2',
+      callbackURL: 'http://localhost:3000/v1/auth/google/callback'
+    }
   }
 };
 
@@ -61,6 +163,6 @@ export {
   REGEX,
   COLORS,
   MONGOOSE_OPTIONS,
-  PASSPORT,
-  application
+  application,
+  ENV_CONFIGARATION
 };

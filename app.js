@@ -6,7 +6,7 @@ http.createServer(app).listen(process.env.PORT, err => {
   if (err) {
     console.error(err);
   } else {
-    console.log(`App listen to port: ${process.env.PORT}`);
+    console.log(`${process.env.NODE_ENV} App listen to port: ${process.env.PORT}`);
   }
 });
 

@@ -4,10 +4,11 @@
   "description": "Starter kit for nodejs api",
   "main": "app.js",
   "scripts": {
-    "start:prod": "NODE_ENV=production babel-node --presets es2015 app.js",
-    "start": "NODE_ENV=development nodemon --exec babel-node --presets es2015 app.js",
+    "start:prod": "babel-node --presets es2015 app.js",
+    "start": "nodemon --exec babel-node --presets es2015 app.js",
     "debug": "babel-node --presets es2015 --debug-brk app.js",
-    "test": "mocha test --compilers js:babel-register"
+    "test": "mocha test --compilers js:babel-register",
+    "pm2": "pm2 start app.js --name='dev' --interpreter ./node_modules/.bin/babel-node"
   },
   "repository": {
     "type": "git",

@@ -217,6 +217,27 @@ https.createServer(options, app).listen(3000, () => {
 })
 ```
 
+
+### Kill server
+
+If you got like `listen EADDRINUSE :::3000` after you try to re run the serve, you have to kill the pid
+
+```sh
+$ lsof -i :<PORT>
+
+$ kill -9 <PID>
+```
+
+### ssh
+
+1. connect to vm `ssh root@<yout_ip>` 
+2. create user adduser name
+3. password passwd 1234
+4. usermod -aG wheel name
+5. firewall-cmd --zone=public --permanent --add-port=3003/tcp
+6. firewall-cmd --reload
+
+
 #### Understanding the File Structure
 ```
 │
