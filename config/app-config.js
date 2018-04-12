@@ -46,13 +46,13 @@ const ENV_CONFIGARATION = {
       cloudinaryApiSecret: '23rf2f23f23f23f2332r-234'
     },
     google: {
-      clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
-      clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
+      clientID: '345-3453.apps.googleusercontent.com',
+      clientSecret: '34t34t3',
       callbackURL: 'http://localhost:3000/v1/auth/google/callback'
     },
     facebook: {
-      clientID: '166316493821335',
-      clientSecret: '30b61df3369f869993daae7263d987f2',
+      clientID: '34534543',
+      clientSecret: '3453434f34g34g34g34',
       callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
     }
   },
@@ -73,13 +73,13 @@ const ENV_CONFIGARATION = {
       cloudinaryApiSecret: '23rf2f23f23f23f2332r-234'
     },
     google: {
-      clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
-      clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
+      clientID: '23423-234234.apps.googleusercontent.com',
+      clientSecret: 'DOAY234234v90PYObc85Vr76EaGh89',
       callbackURL: 'http://localhost:3000/v1/auth/google/callback'
     },
     facebook: {
-      clientID: '166316493821335',
-      clientSecret: '30b61df3369f869993daae7263d987f2',
+      clientID: '234234',
+      clientSecret: '30b61df3369f869992342342343daae7263d987f2',
       callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
     }
   },
@@ -100,13 +100,13 @@ const ENV_CONFIGARATION = {
       cloudinaryApiSecret: '23rf2f23f23f23f2332r-234'
     },
     google: {
-      clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
-      clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
+      clientID: '243242-werwe.apps.googleusercontent.com',
+      clientSecret: '23432423',
       callbackURL: 'http://localhost:3000/v1/auth/google/callback'
     },
     facebook: {
-      clientID: '166316493821335',
-      clientSecret: '30b61df3369f869993daae7263d987f2',
+      clientID: '2343242',
+      clientSecret: '234423',
       callbackURL: 'http://localhost:3000/v1/auth/facebook/callback'
     }
   },
@@ -127,13 +127,13 @@ const ENV_CONFIGARATION = {
       cloudinaryApiSecret: '23rf2f23f23f23f2332r-234'
     },
     google: {
-      clientID: '729744337671-i6h2fo9pdq8v0rqdgqujh5p8fk5hdsup.apps.googleusercontent.com',
-      clientSecret: 'DOAYv90PYObc85Vr76EaGh89',
+      clientID: '23423-234234.apps.googleusercontent.com',
+      clientSecret: '23423423',
       callbackURL: 'http://localhost:3000/'
     },
     facebook: {
-      clientID: '166316493821335',
-      clientSecret: '30b61df3369f869993daae7263d987f2',
+      clientID: '23423423',
+      clientSecret: '23432423423',
       callbackURL: 'http://localhost:3000/v1/auth/google/callback'
     }
   }
