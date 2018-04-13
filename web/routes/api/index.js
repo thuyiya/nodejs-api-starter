@@ -1,5 +1,6 @@
 import { APP } from '../../../config';
 import Auth from './auth-routes';
+import User from './user-routes';
 import { ERROR_RESPONCE } from '../../common/response';
 
 module.exports = (router) => {
@@ -9,6 +10,7 @@ module.exports = (router) => {
   });
 
   Auth.setupRoute(router);
+  User.setupRoute(router);
 
   router.use(function (req, res, next) {
     next({status: 404});
