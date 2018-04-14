@@ -1,6 +1,18 @@
+/**
+ * IMPORT SERVER HELP from Http or Https
+ */
 
 import http from 'http';
+
+/**
+ * LOAD THE APPLICATION
+ */
+
 import { app } from './web';
+
+/**
+ * START SERVER
+ */
 
 http.createServer(app).listen(process.env.PORT, err => {
   if (err) {
@@ -10,9 +22,14 @@ http.createServer(app).listen(process.env.PORT, err => {
   }
 });
 
-// graceful shutdown
+/**
+ * GRACEFUL SHUTDOWN
+ */
+
 process.on('SIGTERM', () => {
-  // desconect radis and other services
+  /**
+   * desconect radis and other services
+   */
   console.log('Api graceful shutdown');
 });
 

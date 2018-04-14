@@ -3,14 +3,14 @@ import Auth from './auth-routes';
 import User from './user-routes';
 import { ERROR_RESPONCE } from '../../common/response';
 
-module.exports = (router) => {
+export default (router) => {
   // Api Statues
   router.route('/').get(function (req, res) {
     res.status(200).json({ code: 2000, message: APP.name + ' api version' + APP.version });
   });
 
-  Auth.setupRoute(router);
-  User.setupRoute(router);
+  Auth(router);
+  User(router);
 
   router.use(function (req, res, next) {
     next({status: 404});

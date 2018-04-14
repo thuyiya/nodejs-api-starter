@@ -1,10 +1,12 @@
-import passport from 'passport';
+import UserServices from '../services/user-service';
 import { SUCCESS_RESPONCE, ERROR_RESPONCE } from '../common/response';
 
-export const signup = async (req, res) => {
+export const signUp = async (req, res) => {
   try {
-    res.status(200).json(SUCCESS_RESPONCE.success('register'));
+    req.body.method = 'local';
+    const user = await UserServices.createUser(req.body);
+    res.status(200).json(SUCCESS_RESPONCE.success(user));
   } catch (error) {
-    res.status(200).json(ERROR_RESPONCE.unauthorized());
+    res.status(401).json(ERROR_RESPONCE.unauthorized(error));
   }
 };

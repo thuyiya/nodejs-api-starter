@@ -13,7 +13,7 @@ const ERROR_RESPONCE = {
   validation: e => {
     return {
       code: 4011,
-      message: constant.RESPONCE.validation,
+      message: constant.RESPONCE.Validation,
       success: false,
       data: e
     };

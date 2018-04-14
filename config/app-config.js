@@ -20,7 +20,7 @@ const BODYPARSER = {
 };
 
 const MONGOOSE_OPTIONS = {
-  autoIndex: false, // Don't build indexes
+  autoIndex: true, // Don't build indexes
   reconnectTries: Number.MAX_VALUE, // Never stop trying to reconnect
   reconnectInterval: 500, // Reconnect every 500ms
   poolSize: 10, // Maintain up to 10 socket connections
@@ -35,7 +35,7 @@ const ENV_CONFIGARATION = {
       appId: ''
     },
     appSecret: {
-      jwt: ''
+      jwt: '23d23d23d23d23d23'
     },
     email: {
       host: '',
@@ -62,7 +62,7 @@ const ENV_CONFIGARATION = {
       appId: ''
     },
     appSecret: {
-      jwt: ''
+      jwt: 'asdasfaf2f2323f23'
     },
     email: {
       host: '',
@@ -89,7 +89,7 @@ const ENV_CONFIGARATION = {
       appId: ''
     },
     appSecret: {
-      jwt: ''
+      jwt: 'f23f23f23f23f32'
     },
     email: {
       host: '',
@@ -116,7 +116,7 @@ const ENV_CONFIGARATION = {
       appId: ''
     },
     appSecret: {
-      jwt: ''
+      jwt: '23f23f23f23'
     },
     email: {
       host: '',

@@ -1,8 +1,7 @@
-import * as userHandler from '../../handlers/user-handler';
+import { RequestValidator } from '../../middleware/';
+import * as UsersHandler from '../../handlers/user-handler';
 
-module.exports = {
-  setupRoute: (router) => {
-    router.route('/users')
-      .get(userHandler.signup);
-  }
+export default (router) => {
+  router.route('/users')
+    .post(RequestValidator.validateBody(RequestValidator.schemas.userCreateSchema), UsersHandler.signUp);
 };
