@@ -7,8 +7,6 @@
 
 # Nodejs Stater Kit
 
-[![N|Solid](https://cldup.com/QHVAB_xBFk.png)](https://www.linkedin.com/in/thuyiya/)
-
 Nodejs Stater Kit is a starter kit for beginers.
 
 # New Features!
@@ -264,9 +262,4 @@ License
 
 [MIT](LICENSE)
 
-
-**Free Software, Hell Yeah!**
-
-[//]: # (Thank any one who love to support)
-
-    [node.js]: <http://nodejs.org>
+![alt text](https://cldup.com/QHVAB_xBFk.png)
